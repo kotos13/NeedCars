@@ -1,0 +1,208 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  background: #cee4b7;
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* удаление с страницы элемента  */
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.start {
+  border: 1px solid #f50303;
+  padding: 10px 70px;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 200;
+  font-size: 32px;
+  font-family: sans-serif;
+}
+.score {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 300px;
+  padding: 1rem 0 0 0;
+  background: #222;
+  z-index: 200;
+  font-size: 1.5rem;
+  color: skyblue;
+  font-family: sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.car,
+.enemy {
+  width: 50px;
+  height: 100px;
+  background: transparent url(./image/player.png) center / cover no-repeat;
+  position: absolute;
+  /* left: 125px;
+  bottom: 10px; */
+}
+
+/* .enemy {
+  background: transparent url(./image/enemy2.png) center / cover no-repeat;
+} */
+
+.gameArea {
+  width: 300px;
+  height: 100vh;
+  position: relative;
+  margin: auto;
+  background: #222;
+  overflow: hidden;
+}
+
+.line {
+  position: absolute;
+  width: 10px;
+  height: 50px;
+  background: #fff;
+  left: 145px;
+}
+
+.pillarLeft {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #fff;
+  left: 0;
+}
